@@ -8,10 +8,10 @@ https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRT2.tr" group-title="Ulusal",TRT 2 [1440p]
 https://tv-trt2.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="ATV.tr" group-title="Ulusal",ATV [480p uyumlu]
+#EXTINF:-1 tvg-id="ATV.tr" group-title="Ulusal",ATV [720p Auto]
 #EXTVLCOPT:http-referrer=https://www.atv.com.tr/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 12; Android TV) AppleWebKit/537.36 Chrome/154 Safari/537.36
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_480p.m3u8
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8
 
 #EXTINF:-1 tvg-id="ShowTV.tr" group-title="Ulusal",Show TV [1080p]
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
