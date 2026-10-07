@@ -1,15 +1,12 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/fatihkartl/turk-tv-playlist/main/epg_turkiye.xml" url-tvg="https://raw.githubusercontent.com/fatihkartl/turk-tv-playlist/main/epg_turkiye.xml"
-# İlk sürüm: 2026-10-07
-# Workflow çalıştıkça otomatik güncellenecek.
+# Manuel temizlik: 2026-10-07
+# Açılmadığı doğrulanan kanallar segment doğrulamasına kadar bloklandı.
 
 #EXTINF:-1 tvg-id="TRT1.tr" group-title="Ulusal",TRT 1 [1440p]
 https://tv-trt1.medya.trt.com.tr/master.m3u8
 
 #EXTINF:-1 tvg-id="TRT2.tr" group-title="Ulusal",TRT 2 [1440p]
 https://tv-trt2.medya.trt.com.tr/master.m3u8
-
-#EXTINF:-1 tvg-id="ATV.tr" group-title="Ulusal",ATV [1080p]
-https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
 
 #EXTINF:-1 tvg-id="ShowTV.tr" group-title="Ulusal",Show TV [1080p]
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
@@ -38,9 +35,6 @@ https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8
 #EXTINF:-1 tvg-id="TRTHaber.tr" group-title="Haber",TRT Haber [720p]
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="NTV.tr" group-title="Haber",NTV
-https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web
-
 #EXTINF:-1 tvg-id="BloombergHT.tr" group-title="Haber",Bloomberg HT [720p]
 https://ciner-live.daioncdn.net/bloomberght/bloomberght.m3u8
 
@@ -59,14 +53,8 @@ https://canli.tgrthaber.com/tgrt.m3u8
 #EXTINF:-1 tvg-id="24TV.tr" group-title="Haber",24 TV [720p]
 https://turkmedya-live.ercdn.net/tv24/tv24.m3u8
 
-#EXTINF:-1 tvg-id="TVNET.tr" group-title="Haber",TVNET [1080p]
-https://tvnet-live.lg.mncdn.com/tvnet/tvnet/playlist.m3u8
-
 #EXTINF:-1 tvg-id="ASpor.tr" group-title="Spor",A Spor [1080p]
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
-
-#EXTINF:-1 tvg-id="TRTSpor.tr" group-title="Spor",TRT Spor [720p]
-https://tv-trtspor.medya.trt.com.tr/master.m3u8
 
 #EXTINF:-1 tvg-id="TRTSporYildiz.tr" group-title="Spor",TRT Spor Yıldız [1440p]
 https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor
