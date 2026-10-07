@@ -44,7 +44,9 @@
           "resolution": 1080
         }
       ],
-      "epg_id": "Atv"
+      "epg_id": "Atv",
+      "disabled": true,
+      "disabled_reason": "Kullanıcı playback testinde açılmadı; gerçek segment doğrulaması yapılana kadar bloklu (2026-10-07)."
     },
     {
       "id": "ShowTV.tr",
@@ -195,7 +197,9 @@
           "resolution": 0
         }
       ],
-      "epg_id": "NTV"
+      "epg_id": "NTV",
+      "disabled": true,
+      "disabled_reason": "Kullanıcı playback testinde açılmadı; gerçek segment doğrulaması yapılana kadar bloklu (2026-10-07)."
     },
     {
       "id": "BloombergHT.tr",
@@ -300,7 +304,9 @@
           "resolution": 1080
         }
       ],
-      "epg_id": "Tvnet"
+      "epg_id": "Tvnet",
+      "disabled": true,
+      "disabled_reason": "Kullanıcı playback testinde açılmadı; gerçek segment doğrulaması yapılana kadar bloklu (2026-10-07)."
     },
     {
       "id": "CNBCe.tr",
@@ -340,7 +346,9 @@
           "resolution": 720
         }
       ],
-      "epg_id": "TRT.Spor"
+      "epg_id": "TRT.Spor",
+      "disabled": true,
+      "disabled_reason": "Kullanıcı playback testinde açılmadı; gerçek segment doğrulaması yapılana kadar bloklu (2026-10-07)."
     },
     {
       "id": "TRTSporYildiz.tr",
