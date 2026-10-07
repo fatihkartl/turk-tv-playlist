@@ -155,9 +155,13 @@ def check_hls_once(url, depth=0):
 
     variants = parse_master_variants(text, final_url)
     if variants and depth < 2:
-        detected = variants[0][0]
-        ok, child_res, detail = check_hls_once(variants[0][2], depth + 1)
-        return ok, max(detected, child_res), f"master->{detail}"
+        failures = []
+        for height, _, variant_url in variants:
+            ok, child_res, detail = check_hls_once(variant_url, depth + 1)
+            if ok:
+                return True, max(height, child_res), f"master->{detail}"
+            failures.append(f"{height or '?'}p:{detail}")
+        return False, 0, "all-variants-failed:" + "|".join(failures[:4])
 
     if "#EXTINF" not in text and "#EXT-X-PART" not in text and "#EXT-X-MAP" not in text:
         return False, 0, "no-media-tags"
