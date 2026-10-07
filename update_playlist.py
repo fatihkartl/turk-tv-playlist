@@ -84,7 +84,8 @@ for ch in CFG["channels"]:
     selected.append({**ch, **best})
 
 def write_playlist(path, fhd_only=False):
-    lines = ["#EXTM3U", "# Otomatik üretilir; elle düzenlemeyin.", f"# Kaynak: {SOURCE}", ""]
+    epg_url = "https://raw.githubusercontent.com/fatihkartl/turk-tv-playlist/main/epg_turkiye.xml"
+    lines = [f'#EXTM3U x-tvg-url="{epg_url}" url-tvg="{epg_url}"', "# Otomatik üretilir; elle düzenlemeyin.", f"# Kaynak: {SOURCE}", ""]
     for e in selected:
         if fhd_only and e["resolution"] < 1080:
             continue
