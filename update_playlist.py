@@ -112,6 +112,21 @@ def parse_previous(path):
         i += 1
     return out
 
+def load_previous_health(path):
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    out = {}
+    for row in data.get("channels", []):
+        cid = row.get("id")
+        if not cid:
+            continue
+        out[cid] = row
+    return out
+
 def parse_master_variants(text, base_url):
     variants = []
     lines = [x.strip() for x in text.splitlines()]
@@ -247,6 +262,7 @@ for entry in upstream:
     by_id.setdefault(entry["id"], []).append(entry)
 
 previous = parse_previous(ROOT / "turkiye_temiz.m3u")
+previous_health = load_previous_health(ROOT / "health_report.json")
 logo_map = choose_logo_map({c["id"] for c in CFG["channels"]}, previous)
 
 selected = []
@@ -311,17 +327,29 @@ for ch in CFG["channels"]:
             break
 
     if chosen is None:
-        # Fail-safe: doğrulanamayan yeni URL'ye geçme.
-        # Mevcut playlist URL'sini değiştirmeden koru.
+        # Fail-safe: Yalnızca DAHA ÖNCE segment testiyle doğrulanmış URL korunabilir.
+        # İlk başlangıç listesindeki elle eklenmiş ama hiç doğrulanmamış linkleri koruma.
         old = previous.get(ch["id"])
-        if old and host_allowed(old["url"], ch["trusted_hosts"]):
+        old_health = previous_health.get(ch["id"], {})
+        last_verified_url = old_health.get("last_verified_url") or (
+            old_health.get("chosen_url") if old_health.get("status") == "verified" else ""
+        )
+        last_verified_at = old_health.get("last_verified_at") or (
+            old_health.get("generated_at_utc") if old_health.get("status") == "verified" else None
+        )
+        if (
+            old
+            and last_verified_url == old["url"]
+            and host_allowed(old["url"], ch["trusted_hosts"])
+        ):
             chosen = {
                 "url": old["url"],
                 "resolution": old.get("resolution", 0),
-                "source": "previous",
+                "source": "previous-verified",
                 "not24": False,
                 "geo": any(x.get("geo") for x in candidates),
-                "health": "kept-previous-unverified",
+                "health": "kept-previous-verified",
+                "last_verified_at": last_verified_at,
             }
 
     if chosen:
@@ -332,11 +360,24 @@ for ch in CFG["channels"]:
         status = "skipped-no-verified-stream"
         chosen_url = ""
 
+    previous_row = previous_health.get(ch["id"], {})
+    if status == "verified":
+        last_verified_url = chosen_url
+        last_verified_at = datetime.now(timezone.utc).isoformat()
+    elif status == "kept-previous-verified":
+        last_verified_url = chosen_url
+        last_verified_at = chosen.get("last_verified_at") or previous_row.get("last_verified_at")
+    else:
+        last_verified_url = previous_row.get("last_verified_url", "")
+        last_verified_at = previous_row.get("last_verified_at")
+
     report_rows.append({
         "id": ch["id"],
         "name": ch["name"],
         "status": status,
         "chosen_url": chosen_url,
+        "last_verified_url": last_verified_url,
+        "last_verified_at": last_verified_at,
         "checks": checks,
     })
 
@@ -363,7 +404,7 @@ write_playlist(ROOT / "turkiye_temiz.m3u", False)
 write_playlist(ROOT / "turkiye_fhd_auto.m3u", True)
 
 verified = sum(1 for x in report_rows if x["status"] == "verified")
-kept = sum(1 for x in report_rows if x["status"] == "kept-previous-unverified")
+kept = sum(1 for x in report_rows if x["status"] == "kept-previous-verified")
 skipped = sum(1 for x in report_rows if x["status"] == "skipped-no-verified-stream")
 
 report = {
