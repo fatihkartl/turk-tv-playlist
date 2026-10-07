@@ -35,6 +35,9 @@ https://tele1-live.ercdn.net/tele1/tele1.m3u8
 #EXTINF:-1 tvg-id="ASpor.tr" group-title="Spor",A Spor [1080p]
 https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
 
+#EXTINF:-1 tvg-id="TRTSpor.tr" group-title="Spor",TRT Spor [1080p]
+https://tv-trtspor1.medya.trt.com.tr/master_1080.m3u8
+
 #EXTINF:-1 tvg-id="TRTSporYildiz.tr" group-title="Spor",TRT Spor Yıldız [1440p]
 https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor
 
