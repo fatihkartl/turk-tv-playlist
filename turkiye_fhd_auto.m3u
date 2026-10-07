@@ -1,0 +1,54 @@
+#EXTM3U
+# İlk sürüm: 2026-10-07
+# Workflow çalıştıkça otomatik güncellenecek.
+
+#EXTINF:-1 tvg-id="TRT1.tr" group-title="Ulusal",TRT 1 [1440p]
+https://tv-trt1.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-id="TRT2.tr" group-title="Ulusal",TRT 2 [1440p]
+https://tv-trt2.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-id="ATV.tr" group-title="Ulusal",ATV [1080p]
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8
+
+#EXTINF:-1 tvg-id="ShowTV.tr" group-title="Ulusal",Show TV [1080p]
+https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
+
+#EXTINF:-1 tvg-id="KanalD.tr" group-title="Ulusal",Kanal D [1080p]
+https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
+
+#EXTINF:-1 tvg-id="TV8.tr" group-title="Ulusal",TV8 [1080p]
+https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3
+
+#EXTINF:-1 tvg-id="Kanal7.tr" group-title="Ulusal",Kanal 7 [1080p]
+https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8
+
+#EXTINF:-1 tvg-id="A2TV.tr" group-title="Ulusal",A2 [1080p]
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8
+
+#EXTINF:-1 tvg-id="AHaber.tr" group-title="Haber",A Haber [1080p]
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8
+
+#EXTINF:-1 tvg-id="HalkTV.tr" group-title="Haber",Halk TV [1080p]
+https://halktv-live.daioncdn.net/halktv/halktv.m3u8
+
+#EXTINF:-1 tvg-id="Tele1.tr" group-title="Haber",Tele 1 [1080p]
+https://tele1-live.ercdn.net/tele1/tele1.m3u8
+
+#EXTINF:-1 tvg-id="TVNET.tr" group-title="Haber",TVNET [1080p]
+https://tvnet-live.lg.mncdn.com/tvnet/tvnet/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ASpor.tr" group-title="Spor",A Spor [1080p]
+https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8
+
+#EXTINF:-1 tvg-id="TRTSporYildiz.tr" group-title="Spor",TRT Spor Yıldız [1440p]
+https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor
+
+#EXTINF:-1 tvg-id="HTSporTV.tr" group-title="Spor",HT Spor [1080p]
+https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
+
+#EXTINF:-1 tvg-id="TRTCocuk.tr" group-title="Diğer",TRT Çocuk [1440p]
+https://tv-trtcocuk.medya.trt.com.tr/master.m3u8
+
+#EXTINF:-1 tvg-id="TRTWorld.tr" group-title="Diğer",TRT World [1080p]
+https://tv-trtworld.medya.trt.com.tr/master.m3u8
