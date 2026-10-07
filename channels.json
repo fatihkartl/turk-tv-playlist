@@ -13,7 +13,8 @@
           "url": "https://tv-trt1.medya.trt.com.tr/master.m3u8",
           "resolution": 1440
         }
-      ]
+      ],
+      "epg_id": "TRT.1"
     },
     {
       "id": "TRT2.tr",
@@ -27,7 +28,8 @@
           "url": "https://tv-trt2.medya.trt.com.tr/master.m3u8",
           "resolution": 1440
         }
-      ]
+      ],
+      "epg_id": "TRT.2"
     },
     {
       "id": "ATV.tr",
@@ -41,7 +43,8 @@
           "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv_1080p.m3u8",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "Atv"
     },
     {
       "id": "ShowTV.tr",
@@ -55,7 +58,8 @@
           "url": "https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "Show"
     },
     {
       "id": "KanalD.tr",
@@ -69,7 +73,8 @@
           "url": "https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "Kanal.D"
     },
     {
       "id": "NOWTV.tr",
@@ -83,7 +88,8 @@
           "url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8",
           "resolution": 720
         }
-      ]
+      ],
+      "epg_id": "NOW"
     },
     {
       "id": "StarTV.tr",
@@ -97,7 +103,8 @@
           "url": "https://dogus.daioncdn.net/startv/startv_720p.m3u8?app=a20ac41e-bdc3-4aa1-934d-26b484480ac9&ce=3",
           "resolution": 720
         }
-      ]
+      ],
+      "epg_id": "Star"
     },
     {
       "id": "TV8.tr",
@@ -111,7 +118,8 @@
           "url": "https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "TV.8"
     },
     {
       "id": "Kanal7.tr",
@@ -126,7 +134,8 @@
           "url": "https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "Kanal.7"
     },
     {
       "id": "360.tr",
@@ -140,7 +149,8 @@
           "url": "https://turkmedya-live.ercdn.net/tv360/tv360.m3u8",
           "resolution": 720
         }
-      ]
+      ],
+      "epg_id": "360"
     },
     {
       "id": "A2TV.tr",
@@ -154,7 +164,8 @@
           "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/a2tv/a2tv.m3u8",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "a2"
     },
     {
       "id": "TRTHaber.tr",
@@ -168,7 +179,8 @@
           "url": "https://tv-trthaber.medya.trt.com.tr/master.m3u8",
           "resolution": 720
         }
-      ]
+      ],
+      "epg_id": "TRT.Haber"
     },
     {
       "id": "NTV.tr",
@@ -182,7 +194,8 @@
           "url": "https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web",
           "resolution": 0
         }
-      ]
+      ],
+      "epg_id": "NTV"
     },
     {
       "id": "BloombergHT.tr",
@@ -196,7 +209,8 @@
           "url": "https://ciner-live.daioncdn.net/bloomberght/bloomberght.m3u8",
           "resolution": 720
         }
-      ]
+      ],
+      "epg_id": "Bloomberg.HT"
     },
     {
       "id": "AHaber.tr",
@@ -210,7 +224,8 @@
           "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "A.Haber"
     },
     {
       "id": "HalkTV.tr",
@@ -224,7 +239,8 @@
           "url": "https://halktv-live.daioncdn.net/halktv/halktv.m3u8",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "Halk.TV"
     },
     {
       "id": "Tele1.tr",
@@ -238,7 +254,8 @@
           "url": "https://tele1-live.ercdn.net/tele1/tele1.m3u8",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "TELE.1"
     },
     {
       "id": "TGRTHaber.tr",
@@ -252,7 +269,8 @@
           "url": "https://canli.tgrthaber.com/tgrt.m3u8",
           "resolution": 720
         }
-      ]
+      ],
+      "epg_id": "TGRT.Haber"
     },
     {
       "id": "24TV.tr",
@@ -266,7 +284,8 @@
           "url": "https://turkmedya-live.ercdn.net/tv24/tv24.m3u8",
           "resolution": 720
         }
-      ]
+      ],
+      "epg_id": "24"
     },
     {
       "id": "TVNET.tr",
@@ -280,7 +299,8 @@
           "url": "https://tvnet-live.lg.mncdn.com/tvnet/tvnet/playlist.m3u8",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "Tvnet"
     },
     {
       "id": "CNBCe.tr",
@@ -289,7 +309,8 @@
       "trusted_hosts": [
         "turknet.ercdn.net"
       ],
-      "fallbacks": []
+      "fallbacks": [],
+      "epg_id": "CNBC-e"
     },
     {
       "id": "ASpor.tr",
@@ -303,7 +324,8 @@
           "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "A.Spor"
     },
     {
       "id": "TRTSpor.tr",
@@ -317,7 +339,8 @@
           "url": "https://tv-trtspor.medya.trt.com.tr/master.m3u8",
           "resolution": 720
         }
-      ]
+      ],
+      "epg_id": "TRT.Spor"
     },
     {
       "id": "TRTSporYildiz.tr",
@@ -331,7 +354,8 @@
           "url": "https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web&platform=trtspor",
           "resolution": 1440
         }
-      ]
+      ],
+      "epg_id": "TRT.Spor.Yıldız"
     },
     {
       "id": "HTSporTV.tr",
@@ -345,7 +369,8 @@
           "url": "https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "HT.Spor"
     },
     {
       "id": "TRTBelgesel.tr",
@@ -359,7 +384,8 @@
           "url": "https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8",
           "resolution": 720
         }
-      ]
+      ],
+      "epg_id": "TRT.Belgesel"
     },
     {
       "id": "TRTCocuk.tr",
@@ -373,7 +399,8 @@
           "url": "https://tv-trtcocuk.medya.trt.com.tr/master.m3u8",
           "resolution": 1440
         }
-      ]
+      ],
+      "epg_id": "TRT.Çocuk"
     },
     {
       "id": "TRTMuzik.tr",
@@ -387,7 +414,8 @@
           "url": "https://tv-trtmuzik.medya.trt.com.tr/master.m3u8",
           "resolution": 720
         }
-      ]
+      ],
+      "epg_id": "TRT.Müzik"
     },
     {
       "id": "TRTWorld.tr",
@@ -401,7 +429,9 @@
           "url": "https://tv-trtworld.medya.trt.com.tr/master.m3u8",
           "resolution": 1080
         }
-      ]
+      ],
+      "epg_id": "TRT.World"
     }
-  ]
+  ],
+  "epg_source": "https://raw.githubusercontent.com/trology85/iptv-epg-turkey/main/epg/turksat_epg.xml"
 }
