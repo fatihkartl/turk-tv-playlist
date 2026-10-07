@@ -269,6 +269,19 @@ selected = []
 report_rows = []
 
 for ch in CFG["channels"]:
+    if ch.get("disabled", False):
+        report_rows.append({
+            "id": ch["id"],
+            "name": ch["name"],
+            "status": "manually-disabled",
+            "chosen_url": "",
+            "last_verified_url": "",
+            "last_verified_at": None,
+            "checks": [],
+            "reason": ch.get("disabled_reason", ""),
+        })
+        continue
+
     candidates = []
     seen_urls = set()
 
