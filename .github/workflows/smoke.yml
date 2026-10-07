@@ -1,0 +1,12 @@
+name: Actions Smoke Test
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/smoke.yml"
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: echo "actions-ok"
