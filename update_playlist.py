@@ -289,6 +289,7 @@ for ch in CFG["channels"]:
         if (
             entry["url"].startswith(("http://", "https://"))
             and host_allowed(entry["url"], ch["trusted_hosts"])
+            and entry["url"] not in set(ch.get("blocked_urls", []))
             and entry["url"] not in seen_urls
         ):
             seen_urls.add(entry["url"])
@@ -301,7 +302,11 @@ for ch in CFG["channels"]:
             })
 
     for fb in ch.get("fallbacks", []):
-        if host_allowed(fb["url"], ch["trusted_hosts"]) and fb["url"] not in seen_urls:
+        if (
+            host_allowed(fb["url"], ch["trusted_hosts"])
+            and fb["url"] not in set(ch.get("blocked_urls", []))
+            and fb["url"] not in seen_urls
+        ):
             seen_urls.add(fb["url"])
             candidates.append({
                 "url": fb["url"],
