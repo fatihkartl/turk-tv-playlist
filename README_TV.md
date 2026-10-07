@@ -13,3 +13,12 @@ https://raw.githubusercontent.com/fatihkartl/turk-tv-playlist/main/turkiye_fhd_a
 Liste GitHub Actions tarafından 6 saatte bir güncellenir. Kaynak olarak iptv-org Türkiye akışları kullanılır; yalnızca channels.json içindeki whitelist kanallar ve güvenilir CDN alan adları kabul edilir. Ücretli/şifreli kanal kaynakları bilerek dahil edilmez.
 
 Not: Yayıncılar CDN adresi veya erişim politikasını değiştirebilir. NOW ve Star gibi bazı kanallar kaynakta şu an 720p olabilir; FHD listesine yalnızca 1080p+ olarak bilinen akışlar girer.
+
+
+## EPG / Program Rehberi
+
+XMLTV:
+https://raw.githubusercontent.com/fatihkartl/turk-tv-playlist/main/epg_turkiye.xml
+
+Sparkle TV'de playlist EPG'yi otomatik algılamazsa bu adresi ayrıca EPG/XMLTV kaynağı olarak ekleyin.
+EPG, playlist ile aynı tvg-id değerlerine yeniden eşlenir ve workflow tarafından 6 saatte bir güncellenir.
